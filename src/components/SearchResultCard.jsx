@@ -22,11 +22,9 @@ const SearchResultCard = ({ result }) => {
                         />
                         {/* --- */}
 
-                        {/* Result Object Category Name */}
                         <p className="absolute text-xs z-20 bottom-0 text-white p-2">
                             { result?.result_object?.category?.name }
                         </p>
-                        {/* --- */}
 
                         {/* Transparent Overlay */}
                         <div className="absolute w-full h-full top-0 bg-gradient-to-b from-transparent to-black opacity-80" />
