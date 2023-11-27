@@ -51,7 +51,7 @@ const PlaceDetails = ({ place }) => {
                         <button className={`${place?.open_now_text?.includes('Closed') ? 'bg-red-400' : 'bg-green-400'} rounded-full py-1 px-3 m-2 shadow-md`}>
                             <p className="text-sm flex items-center">
                                 <svg className="h-5 w-5 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                                    <path stroke-linecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                                 </svg>
 
                                 {/* Place Close/Open Status Diplay with an Open now fallback just incase no text is found in object */}
@@ -205,7 +205,7 @@ const PlaceDetails = ({ place }) => {
                             <button className={`${place.open_now_text?.includes('Closed') ? 'bg-red-400' : 'bg-green-400'} rounded-full py-1 px-3 my-2 mr-2`}>
                                 <p className="text-sm flex items-center">
                                     <svg className="h-5 w-5 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                                        <path stroke-linecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                                     </svg>
 
                                     {/* Place Close/Open Status Diplay with an Open now fallback just incase no text is found in object */}

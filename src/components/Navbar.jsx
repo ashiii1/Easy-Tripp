@@ -1,5 +1,4 @@
 import { useState } from "react";
-import logo from '../img/logo.svg';
 import { Link } from "react-router-dom";
 
 const Navbar = ({ sticky, border }) => {
@@ -13,20 +12,18 @@ const Navbar = ({ sticky, border }) => {
 
     return ( 
         // Navbar adds scrolled class to nav element when window's scroll down is greater than 20
-        <nav className={`${(scrolled || border) && 'border-b-2'} ${sticky && 'sticky top-0' } relative z-50 transition duration-700 bg-white`}>
-            {/* element gets a shadow when menu is toggled -> when menu is clicked and on display, the element gets a shadow  */}
-            <div className={`container mx-auto w-full flex justify-between items-center px-4 py-3 ${ isMenuToggled && 'shadow-md' }`}>
+<nav style={{backgroundColor:'#19BDFF'}} className={`${(scrolled || border) && 'border-b-2' } ${sticky && 'sticky top-0' } relative z-50 transition duration-700 bg-white`}>
+            <div className={`container mx-auto w-full flex justify-between items-center px-4 py-3  ${ isMenuToggled && 'shadow-md' } bg-red`}>
                 {/* Logo */}
                 <Link to={"/"}>
-                    <img src={logo} alt="Traveladvisor" className="w-[180px] sm:w-[200px] md:w-[250px]"/>
+                    <img src="https://thumbs.dreamstime.com/b/amd-icon-vector-logo-template-208665248.jpg" alt=" Explore-Ease" className="w-[50px] sm:w-[20px] md:w-[50px]"/>
                 </Link>
-                {/*  */}
                 
                 <ul className="hidden mmd:flex space-x-1">
                     {/* Link to Hotels Route */}
                     <Link to={"/hotels"}>
                         <li className="rounded-full hover:bg-gray-200 py-2 px-3 cursor-pointer">
-                            <p className="flex font-medium items-center">
+                            <p className="flex font-medium items-center ">
                                 <svg viewBox="0 0 24 24" className="w-6 h-6 mr-2">
                                     <path d="M20.587 12.139V4.144H3.424v7.986A3.805 3.805 0 002 15.097v4.755h1.906v-1.905h16.188v1.91H22v-4.76a3.804 3.804 0 00-1.413-2.958zm-1.906-6.09V8.83a5.048 5.048 0 00-2.865-.876c-1.565 0-2.952.69-3.816 1.749-.864-1.059-2.252-1.749-3.818-1.749-1.07 0-2.056.324-2.851.866V6.049h13.35zm-.258 5.248c-.077-.005-.155-.012-.234-.012h-4.971c.438-.838 1.437-1.426 2.598-1.426 1.168 0 2.173.593 2.607 1.438zm-7.643-.012H5.812c-.081 0-.159.007-.238.012.434-.844 1.438-1.438 2.606-1.438 1.163 0 2.163.588 2.6 1.426zM3.906 16.04v-.943c0-1.051.855-1.905 1.906-1.905h12.376c1.051 0 1.905.854 1.905 1.905v.943H3.906z"></path>
                                 </svg> 
@@ -34,7 +31,6 @@ const Navbar = ({ sticky, border }) => {
                             </p> 
                         </li>
                     </Link>
-                    {/* --- */}
 
                     {/* Link to Restauranst Route */}
                     <Link to={"/restaurants"}>
@@ -47,7 +43,6 @@ const Navbar = ({ sticky, border }) => {
                             </p> 
                         </li>
                     </Link>
-                    {/* --- */}
 
                     {/* Link to attractions route */}
                     <Link to={"/attractions"}>
@@ -63,7 +58,6 @@ const Navbar = ({ sticky, border }) => {
                             </p> 
                         </li>
                     </Link>
-                    {/* --- */}
 
                     {/* Link to Map View */}
                     <Link to={"/map"}>
@@ -76,7 +70,6 @@ const Navbar = ({ sticky, border }) => {
                             </p> 
                         </li>
                     </Link>
-                    {/* --- */}
                 </ul>
 
                 {/* Menu Toggle Button -> Opens Menu if close and closes menu if Opened */}
@@ -96,9 +89,7 @@ const Navbar = ({ sticky, border }) => {
                         </svg>
                     ) }
                 </div>
-                {/* --- */}
             </div>
-            {/* --- */}
 
             {/* Menu For Only Mobile */}
             {isMenuToggled && (
@@ -112,7 +103,6 @@ const Navbar = ({ sticky, border }) => {
                             Hotels
                         </p> 
                     </Link>
-                    {/* --- */}
 
                     {/* Link to Restaurants Route */}
                     <Link to={"/restaurants"}>
@@ -123,7 +113,6 @@ const Navbar = ({ sticky, border }) => {
                             Restaurants
                         </p>
                     </Link>
-                    {/* --- */}
 
                     {/* Link to attractions Route */}
                     <Link to={"/attractions"}>
@@ -137,7 +126,6 @@ const Navbar = ({ sticky, border }) => {
                             Attractions
                         </p>
                     </Link>
-                    {/* --- */}
 
                     {/* Lint to Mapview Route */}
                     <Link to={"/map"}>
@@ -148,10 +136,8 @@ const Navbar = ({ sticky, border }) => {
                             Switch to Map View
                         </p> 
                     </Link>
-                    {/* --- */}
                 </div>
             )}
-            {/* --- */}
         </nav>
      );
 }

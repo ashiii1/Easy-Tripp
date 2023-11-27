@@ -18,11 +18,11 @@ const WhereTo = () => {
 
     return ( 
         <div className="container mx-auto p-4 relative flex justify-center items-center">
-            <img src={wheretoImg} alt="BG" 
-                className="object-cover md:w-full md:h-[22em] h-[20em]" 
+            <img src="https://www.shutterstock.com/image-photo/famous-landmarks-world-grouped-together-260nw-459711229.jpg" alt="BG" 
+                className="object-cover md:w-full md:h-[24em] h-[25em]" 
             />
             {/* Search Input Field */}
-            <div className="absolute w-[85%] md:w-10/12">
+            <div className="absolute w-[70%] md:w-8/12 top-10">
                 <form className="relative" onSubmit={handleSubmit}>
                     <svg className="h-6 w-6 absolute left-3 top-1/4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />

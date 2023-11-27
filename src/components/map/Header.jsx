@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Autocomplete } from "@react-google-maps/api";
-import logo from '../../img/logo.svg';
 
 const Header = ({setCoordinates}) => {
     const [search, setSearch] = useState(false);
@@ -24,7 +23,7 @@ const Header = ({setCoordinates}) => {
             <div className="flex bg-white justify-between items-center w-full p-3 md:p-4 rounded-sm shadow-md">
                 {/* Logo displays only when  */}
                 { !search && ( 
-                    <img src={logo} alt="TravelAdvisor" className="h-6 sm:h-7 md:h-8" />
+                    <img src='https://thumbs.dreamstime.com/b/amd-icon-vector-logo-template-208665248.jpg' alt=" Explore-Ease" className="h-6 sm:h-7 md:h-8" />
                 ) }
                 {/* --- */}
 
