@@ -13,7 +13,7 @@ const responsive = {
         margin: 15,
     },
     600: {
-        items: 2,
+        items: 4,
         margin: 10,
     },
     768: {
@@ -21,9 +21,10 @@ const responsive = {
         margin: 10,
     },
     1000: {
-        items: 4,
+        items: 2,
         margin: 10,
     }
+    
 }
 
 const ToVisit = () => {
@@ -58,6 +59,8 @@ const ToVisit = () => {
                                 `<svg xmlns="http://www.w3.org/2000/svg" className="h-2 w-2" viewBox="0 0 20 20" fill="currentColor">
                                     <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
                                 </svg>`
+                                
+
                             ]}
                         >
                             {/* Mapping through the Places Object, a place card is rendered for each data */}
