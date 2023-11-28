@@ -6,6 +6,7 @@ module.exports = {
         "dark": "#333333",
         "secondary": "#00afef"
       },
+      
       screens: {
         mmd: "860px",
       },
