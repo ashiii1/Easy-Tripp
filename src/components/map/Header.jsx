@@ -5,7 +5,7 @@ const Header = ({setCoordinates}) => {
     const [search, setSearch] = useState(false);
     const [autoComplete, setAutoComplete] = useState(null);
 
-    // Sets new AutoComplete state value after loading seearch result value
+    // Sets new autocoplt state value after loading seearch result value
     const onLoad = (autoC) => setAutoComplete(autoC);
 
     // Function that receives and sets new Cordinates for new search location

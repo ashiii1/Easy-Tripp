@@ -12,7 +12,7 @@ const Sidebar = ({ places }) => {
             <div className="md:hidden grid grid-cols-2 gap-1 border-t border-gray-300 p-2 box-border fixed z-30 w-full bottom-0 bg-white text-sm font-medium">
                 <div className="col-span-1 space-y-1">
                     <p>Type</p>
-                    {/* Select field for setting new value for 'type' state value */}
+                    {/* Select field for sets new value for 'type' state value */}
                     <select 
                         value={type} 
                         onChange={(e) => {setType(e.target.value)}}

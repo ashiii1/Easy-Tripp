@@ -11,7 +11,7 @@ const PlaceDetails = ({ place }) => {
                 // onClick Event to display a pop-over of individual place details
                 onClick={() => !showInfo ? setShowInfo(true) : setShowInfo(false)}
             >
-                {/* Place Image displays Image if found else a default image is rendered as fallback */}
+                {/* Place Image displ Image if found else a default image is rendered as fallback */}
                 <img 
                     src={place?.photo ? place?.photo?.images?.large?.url : 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/f7/49/68/hotel-bon-voyage.jpg?w=200&h=-1&s=1'} 
                     className="w-full h-[150px] object-cover"

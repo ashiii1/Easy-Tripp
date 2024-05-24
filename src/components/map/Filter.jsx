@@ -17,7 +17,7 @@ const Filter = () => {
                 <div className="w-full space-y-1 font-medium">
                     <p>Place Type</p>
                     
-                    {/* Select Field for Rating that Set new Place Type state value */}
+                    {/* Select Field for rate that Set new Place Type state value */}
                     <select 
                         value={type} 
                         onChange={(e) => {setType(e.target.value)}}

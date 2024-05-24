@@ -128,7 +128,7 @@ const Map = ({ places, coordinates, setCoordinates, setBounds }) => {
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
         width: '800%', // Adjust the width as needed
-        height: '100vh', // Adjust the height as needed
+        height: '100vh', // Adjust Height
         position: 'relative',
     };
 
