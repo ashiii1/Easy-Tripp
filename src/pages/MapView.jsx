@@ -4,7 +4,7 @@ import { Header, Map, Sidebar, Filter } from "../components/map"
 import { MainContext } from "../context/MainContext"
 
 const MapView = () => {
-    // Destructuring all neccessary states from the main context
+    // Destructuring al neccessary states from the main context
     const { places, coordinates, setCoordinates, setBounds, filteredPlaces } = useContext(MainContext);
     const history = useHistory();
 

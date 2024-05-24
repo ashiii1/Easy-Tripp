@@ -8,7 +8,7 @@ import { SearchResultLoader } from "../components/loaders";
 const SearchResult = () => {
     const history = useHistory();
     
-    // Destructuring the 'search' property from the useLocation() hook object
+    // Destructuring the 'serch' property from the useLocation() hook object
     const { search } = useLocation();
     
     // Instantiating a URLSearchParams passing on the search property

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import wheretoImg from '../img/whereto.webp';
+// import wheretoImg from '../img/whereto.webp';
 import { useHistory } from "react-router-dom";
 
 const WhereTo = () => {

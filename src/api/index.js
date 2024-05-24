@@ -56,7 +56,6 @@ export const getPlacesByLatLng = async (type, lat, lng, params, source) => {
   }
 }
 
-// Get Place details RTCRtpReceiver, 'type', 'location_id' and 'source' as paramter to endpoint call
 export const getPlaceDetails = async (type, location_id, source) => {
   try {
     const { data } = await axios.get(`https://travel-advisor.p.rapidapi.com/${type}/get-details`, {
@@ -69,7 +68,6 @@ export const getPlaceDetails = async (type, location_id, source) => {
       }
     }, { cancelToken: source.token });
 
-    // Data is returned once resolved
     return data;
   } catch (error) {
     if (axios.isCancel(error)){
@@ -80,7 +78,6 @@ export const getPlaceDetails = async (type, location_id, source) => {
   }
 }
 
-// Get Place Review received the 'location_id' and 'source' as paramters for endpoint call
 export const getPlaceReviews = async (location_id, source) => {
   try {
     const { data: { data } } = await axios.get(`https://travel-advisor.p.rapidapi.com/reviews/list`, {
@@ -94,7 +91,6 @@ export const getPlaceReviews = async (location_id, source) => {
       }
     }, { cancelToken: source.token });
 
-    // Data is returned once resolved
     return data;
   } catch (error) {
     if(axios.isCancel(error)) {
@@ -105,7 +101,6 @@ export const getPlaceReviews = async (location_id, source) => {
   }
 }
 
-// Search Place recieves 'location', some 'params' and 'source' as a parameters for endpoint call
 export const searchPlaces = async (location, params, source) => {
   try {
     const { data: { data } } = await axios.get('https://travel-advisor.p.rapidapi.com/locations/search', {
@@ -119,7 +114,6 @@ export const searchPlaces = async (location, params, source) => {
       }
     }, { cancelToken: source.token })
 
-    // Data is returned once resolved
     return data;
   } catch (error) {
     if (axios.isCancel(error)) {

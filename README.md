@@ -2,7 +2,7 @@
 
 ## Install
 Run the Command to Install all dependencies.
-```sh
+add travel advisor api and maps api
 npm install
 ```
 

@@ -1,3 +1,4 @@
+//placecard
 import ReactStarsRating from 'react-awesome-stars-rating';
 import { Link } from "react-router-dom";
 

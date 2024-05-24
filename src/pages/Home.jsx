@@ -4,7 +4,7 @@ import travelerChoiceBg from "../img/tc_cards_desktop.jpeg";
 import travelerChoiceBgSM from "../img/tc_cards_tablet.jpeg";
 
 const Home = () => {
-    // Home Page Trending in Travel toggle state 
+    // Home pag Trending in Travel toggle state 
     const [toggle, setToggle] = useState({
         toGo: true, // Place to Go state, active by defaul
         toDo: false, //Things to Do state

@@ -9,7 +9,7 @@ import axios from "axios";
 import map from "../img/map.png";
 
 const RestaurantsList = () => {
-    // Destructuring all Neccesary state from main Context
+    // Destructuring all Neccesay state from main Context
     const { coordinates, isLoading, setIsLoading, setType } = useContext(MainContext);
     const [restaurants, setRestaurants ] = useState();
     const history = useHistory();

@@ -1,4 +1,4 @@
-// Single Place Details for => Attractions and Restaurants
+// Single Place Details for  Attractions and Restaurants
 
 import { useParams } from "react-router-dom";
 import { useEffect, useState, } from "react";

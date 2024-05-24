@@ -66,7 +66,7 @@ const ToVisit = () => {
                                 // Place card receives each place as prop
                                 <PlaceCard key={index} place={place} type="attractions" />
                             ))}
-                            {/* --- */}
+                            {/* ---f*/}
                         </OwlCarousel>
                     </div>
                     {/* --- */}

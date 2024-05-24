@@ -17,7 +17,6 @@ const HotelCard = ({ hotel }) => {
             </div>
             {/* / Hotel Image */}
 
-            {/* Hotel Details */}
             <div className="col-span-12 mmd:col-span-8 p-3">
                 {/* Name */}
                 <Link to={`hotels/${hotel?.location_id}`}>
@@ -194,13 +193,11 @@ const HotelCard = ({ hotel }) => {
                             </span>
                             { hotel?.num_reviews } Reviews
                         </p>
-                        {/* --- */}
+                    
 
-                        {/* Hotel Ranking */}
                         <p className="text-xs">
                             { hotel?.ranking }
                         </p>
-                        {/* --- */}
                         
                         <p className="hidden mmd:flex items-center text-xs">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-2" viewBox="0 0 20 20" fill="currentColor">
@@ -209,11 +206,10 @@ const HotelCard = ({ hotel }) => {
                             Free Wifi
                         </p>
                     </div>
-                    {/* / Rating */}
+                    
 
                 </div>
             </div>
-            {/* / Hotel Details */}
 
         </div>
      );

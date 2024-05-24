@@ -266,7 +266,7 @@ const HotelsList = () => {
                             </div>
                         </div>
                     </div>
-                    {/* / Map view */}
+                    {/* / Map view*/}
 
                     {/* Hotels Listing */}
                     <div className="lg:col-span-9">

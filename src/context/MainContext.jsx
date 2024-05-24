@@ -16,7 +16,7 @@ export const MainContextProvider = ({ children }) => {
     const [hotels, setHotels] = useState();
     const [attractions, setAttractions] = useState();
 
-    // Get Current User Location
+    // Get Current User location
     useEffect(() => {
         // Getting the current position corrdinates from browsers naviagtor sensor
         navigator.geolocation.getCurrentPosition(({ coords: {latitude, longitude} }) => {

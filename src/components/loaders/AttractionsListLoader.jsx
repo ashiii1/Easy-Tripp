@@ -1,3 +1,4 @@
+//Attractions
 const AttractionsListLoader = () => {
     return ( 
         <div className="container mx-auto p-4 animate-pulse">
