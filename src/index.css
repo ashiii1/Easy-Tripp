@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: #d9fdfc;
 }
 
 .travel_toggle::-webkit-scrollbar {

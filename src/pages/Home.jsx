@@ -21,20 +21,16 @@ const Home = () => {
 
             {/* Traveler Choice Section */}
             <div className="bg-[#55CEFF]">
-                <div className="container mx-auto mmd:grid mmd:grid-cols-12 h-[300px] sm:h-[300px] mmd:h-[400px] overflow-hidden">
-                    <div className="col-span-3 text-center py-6 flex flex-col items-center justify-center p-4 md:p-2">
+                <div className="container mx-auto mmd:grid mmd:grid-cols-12 h-[300px] sm:h-[300px] mmd:h-[600px] overflow-hidden">
+                    <div className=" col-span-3 text-center py-6 flex flex-col items-center justify-center p-4 md:p-2">
                         <img src='https://thumbs.dreamstime.com/b/amd-icon-vector-logo-template-208665248.jpg' alt=""  className="h-16 lg:h-20 mb-5 lg:mb-10" />
                         <h2 className="text-black font-bold text-2xl md:text-[2.15em]">
                             Travelers' Choice Best of the Best
                         </h2>
-                        <button className="rounded-full bg-black hover:bg-gray-600 transition ease-out duration-200 text-white w-fit py-2 sm:py-3 px-3 sm:px-4 mt-5 lg:mt-14">
-                            <p className="font-semibold text-sm">
-                                See the winners
-                            </p>
-                        </button>
+                        
                     </div>
                     {/* Section Background Image - Displays only on Large devices, Like Desktop */}
-                    <div className="hidden mmd:block h-full col-span-9 bg-cover" style={{backgroundImage: `url(${travelerChoiceBg})`}}/>
+                    <div className="hidden mmd:block h-90 w-120 col-span-9 bg-cover" style={{backgroundImage: `url(${"https://cdn.pixabay.com/photo/2017/12/16/22/22/bora-bora-3023437_640.jpg"})`}}/>
                     {/* --- */}
 
                     {/* Section Background Image - Displays only on Small Devices, Mobile */}

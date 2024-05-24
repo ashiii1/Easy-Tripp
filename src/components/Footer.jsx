@@ -22,14 +22,10 @@ const Footer = () => {
                         </div>
                         <div className="text-[0.7em] md:text-xs w-full space-y-3">
                             <p>
-                                This is the version of our website addressed to speakers of English in the United States. If you are a resident of another country or region, please select the appropriate version of TravelAdvisor for your country or region in the drop-down menu.
+                                This is website will ease your Travelling journey.
                             </p>
-                            <p>
-                                EasyExplore LLC makes no guarantees for availability of prices advertised on our sites and applications. Listed prices may require a stay of a particular length or have blackout dates, qualifications or other applicable restrictions. TravelAdvisor LLC is not responsible for any content on external web sites that are not owned or operated by  Explore-Ease. Indicative hotel prices displayed on our “Explore” pages are estimates extrapolated from historic pricing data.
-                            </p>
-                            <p>
-                            EasyExplore LLC is not a booking agent or tour operator. When you book with one of our partners, please be sure to check their site for a full disclosure of all applicable fees.
-                            </p>
+                           
+                         
                         </div>
                     </div>
                     <div className="col-span-8">
