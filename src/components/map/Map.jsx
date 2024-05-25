@@ -3,7 +3,7 @@ import ReactStarsRating from 'react-awesome-stars-rating';
 
 const Map = ({ places, coordinates, setCoordinates, setBounds }) => {
     const rightContainerStyle = {
-        backgroundImage: 'url(https://media.wired.com/photos/59269cd37034dc5f91bec0f1/191:100/w_1280,c_limit/GoogleMapTA.jpg)',
+    
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
@@ -14,7 +14,7 @@ const Map = ({ places, coordinates, setCoordinates, setBounds }) => {
 
     return (
         <div className="flex">
-            <div style={{ width: '50%', height: '100vh' }}>
+            <div style={{ width: '120%', height: '100vh' }}>
                 <GoogleMapReact
                     bootstrapURLKeys={{ key: import.meta.env.VITE_GOOGLE_MAP_API_KEY }}
                     defaultCenter={coordinates}
@@ -40,7 +40,7 @@ const Map = ({ places, coordinates, setCoordinates, setBounds }) => {
                                 {place?.photo && (
                                     <img
                                         src={place?.photo?.images?.small?.url}
-                                        className="w-20 h-full object-cover"
+                                        className="w-70 h-full object-cover"
                                     />
                                 )}
                                 <ReactStarsRating

@@ -33,7 +33,7 @@ const ToEat = () => {
             { !places || places?.length < 1 ? (
                 <PlaceCardLoader />
             ) : (
-                <div className="container mx-auto p-4">
+                <div className="container mx-auto p-4 ">
                     <h2 className="font-semibold text-lg md:text-2xl">
                         Place to Eat
                     </h2>
