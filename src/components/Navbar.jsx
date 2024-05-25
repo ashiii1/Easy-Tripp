@@ -1,27 +1,21 @@
 //navbar
 import { useState } from "react";
 import { Link } from "react-router-dom";
-
 const Navbar = ({ sticky, border }) => {
     const [isMenuToggled, setIsMenuToggled] = useState(false);
     const [scrolled, setScrolled] = useState(false);
-
-    // Sticky state -> If Sticky prop is received window adds event listener
     if (sticky) {
         window.addEventListener('scroll', () => window.scrollY > 20 ? setScrolled(true) : setScrolled(false));
     }
-
-    return ( 
-        // Navbar adds scrolled class to nav element when window's scroll down is greater than 20
+    return (
 <nav style={{backgroundColor:'#19BDFF'}} className={`${(scrolled || border) && 'border-b-2' } ${sticky && 'sticky top-0' } relative z-50 transition duration-700 bg-white`}>
             <div className={`container mx-auto w-full flex justify-between items-center px-4 py-3  ${ isMenuToggled && 'shadow-md' } bg-red`}>
-                {/* Logo */}
+                {}
                 <Link to={"/"}>
                     <img src="https://thumbs.dreamstime.com/b/amd-icon-vector-logo-template-208665248.jpg" alt=" Explore-Ease" className="w-[50px] sm:w-[20px] md:w-[50px]"/>
                 </Link>
-                
                 <ul className="hidden mmd:flex space-x-1">
-                    {/* Link to Hotels Route */}
+                    {}
                     <Link to={"/hotels"}>
                         <li className="rounded-full hover:bg-gray-200 py-2 px-3 cursor-pointer">
                             <p className="flex font-medium items-center ">
@@ -32,8 +26,7 @@ const Navbar = ({ sticky, border }) => {
                             </p> 
                         </li>
                     </Link>
-
-                    {/* Link to Restauranst Route */}
+                    {}
                     <Link to={"/restaurants"}>
                         <li className="rounded-full hover:bg-gray-200 py-2 px-3 cursor-pointer">
                             <p className="flex font-medium items-center">
@@ -44,8 +37,7 @@ const Navbar = ({ sticky, border }) => {
                             </p> 
                         </li>
                     </Link>
-
-                    {/* Link to attractions route */}
+                    {}
                     <Link to={"/attractions"}>
                         <li className="rounded-full hover:bg-gray-200 py-2 px-3 cursor-pointer" >
                             <p className="flex font-medium items-center">
@@ -59,8 +51,7 @@ const Navbar = ({ sticky, border }) => {
                             </p> 
                         </li>
                     </Link>
-
-                    {/* Link to Map View */}
+                    {}
                     <Link to={"/map"}>
                         <li className="rounded-full bg-black text-white py-2 px-3 cursor-pointer">
                             <p className="flex font-medium items-center">
@@ -72,30 +63,26 @@ const Navbar = ({ sticky, border }) => {
                         </li>
                     </Link>
                 </ul>
-
-                {/* Menu Toggle Button -> Opens Menu if close and closes menu if Opened */}
+                {}
                 <div 
                     className="mmd:hidden rounded-full hover:bg-gray-200 p-2 cursor-pointer" 
                     onClick={() => isMenuToggled ? setIsMenuToggled(false) : setIsMenuToggled(true) }
                 >
                     { !isMenuToggled ? (
-                        // Display is Menu Open Icon - Menu is Closed
                         <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                             <path strokeLinecap="round" strokeLinejoin="round" d="M4 8h16M4 16h16" />
                         </svg>
                     ) : (
-                        // Display a Menu Close Icon
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                             <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                         </svg>
                     ) }
                 </div>
             </div>
-
-            {/* Menu For Only Mobile */}
+            {}
             {isMenuToggled && (
                 <div className="flex flex-col mmd:hidden bg-white shadow-md absolute animate-slide-in right-0">
-                    {/* Link to hotel Route */}
+                    {}
                     <Link to={"/hotels"}>
                         <p className="flex font-medium items-center cursor-pointer px-4 py-3 hover:bg-gray-200">
                             <svg viewBox="0 0 24 24" className="w-6 h-6 mr-2">
@@ -104,8 +91,7 @@ const Navbar = ({ sticky, border }) => {
                             Hotels
                         </p> 
                     </Link>
-
-                    {/* Link to Restaurants Route */}
+                    {}
                     <Link to={"/restaurants"}>
                         <p className="flex font-medium items-center cursor-pointer px-4 py-3 hover:bg-gray-200">
                             <svg viewBox="0 0 24 24" className="w-6 h-6 mr-2">
@@ -114,8 +100,7 @@ const Navbar = ({ sticky, border }) => {
                             Restaurants
                         </p>
                     </Link>
-
-                    {/* Link to attractions Route */}
+                    {}
                     <Link to={"/attractions"}>
                         <p className="flex font-medium items-center cursor-pointer px-4 py-3 hover:bg-gray-200">
                             <svg viewBox="0 0 24 24" className="w-6 h-6 mr-2">
@@ -127,8 +112,7 @@ const Navbar = ({ sticky, border }) => {
                             Attractions
                         </p>
                     </Link>
-
-                    {/* Lint to Mapview Route */}
+                    {}
                     <Link to={"/map"}>
                         <p className="flex font-medium items-center cursor-pointer px-4 py-3 bg-black text-white">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
@@ -142,5 +126,4 @@ const Navbar = ({ sticky, border }) => {
         </nav>
      );
 }
- 
 export default Navbar;

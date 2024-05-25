@@ -1,5 +1,3 @@
-//Placecard
-
 const PlaceCardLoader = () => {
     return ( 
         <div className="container mx-auto px-4 sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 sm:gap-3 my-12">

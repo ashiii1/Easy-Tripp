@@ -1,4 +1,3 @@
-//Search
 const SearchResultLoader = () => {
     return ( 
         <div className="container mx-auto space-y-3 p-4 animate-pulse">

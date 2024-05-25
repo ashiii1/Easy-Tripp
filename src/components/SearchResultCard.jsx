@@ -1,16 +1,14 @@
 //Searchresults
 import ReactStarsRating from "react-awesome-stars-rating";
 import { Link } from "react-router-dom";
-
 const SearchResultCard = ({ result }) => {
     return ( 
         <>
-            {/* Search Result Object Card  */}
+            {}
             { result?.result_object?.category?.key === 'geographic' ? (
-                // -> this particular card is display if the result value of key is 'geographic'
                 <div className="block md:grid md:grid-cols-12 p-4 gap-3 border-b">
                     <div className="col-span-3 rounded overflow-hidden max-h-[200px] md:max-h-[150px] relative">
-                        {/* Image displayed for Result Objcet, Check whether result has image and chooses which ever size available else a default image is displayed as fallback */}
+                        {}
                         <img src={ result?.result_object?.photo ? ( 
                                     result?.result_object?.photo?.images?.large?.url || result?.result_object?.photo?.images?.original?.url ||
                                     result?.result_object?.photo?.images?.medium?.url || result?.result_object?.photo?.images?.small?.url
@@ -21,26 +19,23 @@ const SearchResultCard = ({ result }) => {
                             alt={result?.result_object?.name} 
                             className="object-cover h-full w-full" 
                         />
-                        {/* --- */}
-
+                        {}
                         <p className="absolute text-xs z-20 bottom-0 text-white p-2">
                             { result?.result_object?.category?.name }
                         </p>
-
-                        {/* Transparent Overlay */}
+                        {}
                         <div className="absolute w-full h-full top-0 bg-gradient-to-b from-transparent to-black opacity-80" />
-                        {/* --- */}
+                        {}
                     </div>
                     <div className="col-span-9 flex flex-wrap">
                         <div className="w-full self-start">
-                            {/* Result Object Name */}
+                            {}
                             <h3 className="font-semibold text-lg mb-2 mt-1 md:mt-0">
                                 { result?.result_object?.name }
                             </h3>
-                            {/* --- */}
-
+                            {}
                             <div className="text-sm text-dark">
-                                {/* Reesult Object Rating (renders only if value is found), its rating value is passed into a ReactStarsRating component to render stars rating */}
+                                {}
                                 { result?.result_object?.rating && (
                                     <p className="flex items-center">
                                         <ReactStarsRating 
@@ -53,17 +48,15 @@ const SearchResultCard = ({ result }) => {
                                         { result?.result_object?.num_reviews?.toLocaleString() } reviews
                                     </p>
                                 ) }
-                                {/* --- */}
-
-                                {/* Result Object Address or Location */}
+                                {}
+                                {}
                                 <p>
                                     { result?.result_object?.address || result?.result_object?.location_string  }
                                 </p>
-                                {/* --- */}
+                                {}
                             </div>
                         </div>
-                
-                        {/* Review Snippet Displayed If Available */}
+                        {}
                         { (result?.review_snippet && result?.review_snippet?.snippet) && (
                             <div className="w-full self-end text-xs mmd:text-sm text-dark mt-5 mmd:mt-0 space-y-1">
                                 <p className="flex items-center">
@@ -77,17 +70,16 @@ const SearchResultCard = ({ result }) => {
                                 </p>
                             </div>
                         ) }
-                        {/* / Review Snippet Displayed If Available */}
+                        {}
                     </div>
                 </div>
             ) : (
-                // -> this card is display for every result value that key is not 'geographic'
                 <div className="block md:grid md:grid-cols-12 p-4 gap-3 border-b">
                     <div className="col-span-3 rounded overflow-hidden max-h-[200px] md:max-h-[150px] relative">
-                        {/* Link to Individual placeDetails route created with result's category key (e.g. 'hotel') plus 's' (i.e. 'hotels') forward slash the result object id */}
+                        {}
                         <Link to={`${result?.result_object?.category?.key+'s'}/${result?.result_object?.location_id}`}>
                             <>
-                                {/* Image displayed for Result Objcet, Check whether result has image and chooses which ever size available else a default image is displayed as fallback */}
+                                {}
                                 <img src={ result?.result_object?.photo ? ( 
                                             result?.result_object?.photo?.images?.large?.url || result?.result_object?.photo?.images?.original?.url ||
                                             result?.result_object?.photo?.images?.medium?.url || result?.result_object?.photo?.images?.small?.url
@@ -98,31 +90,28 @@ const SearchResultCard = ({ result }) => {
                                     alt={result?.result_object?.name} 
                                     className="object-cover h-full w-full" 
                                 />
-                                {/* --- */}
-
-                                {/* Result object category name */}
+                                {}
+                                {}
                                 <p className="absolute text-xs z-20 bottom-0 text-white p-2">
                                     { result.result_object.category.name }
                                 </p>
-                                {/* --- */}
-
-                                {/* Transparent Overlay */}
+                                {}
+                                {}
                                 <div className="absolute w-full h-full top-0 bg-gradient-to-b from-transparent to-black opacity-80" />
-                                {/* --- */}
+                                {}
                             </>
                         </Link>
-                        {/* --- */}
+                        {}
                     </div>
                     <div className="col-span-9 flex flex-wrap">
                         <div className="w-full self-start">
-                            {/* Result object name */}
+                            {}
                             <h3 className="font-semibold text-lg mb-2 mt-1 md:mt-0">
                                 { result?.result_object?.name }
                             </h3>
-                            {/* --- */}
-
+                            {}
                             <div className="text-sm text-dark">
-                                {/* Result Object rating (renders only if value is found), its rating value is passed into a ReactStarsRating component to render stars rating */}
+                                {}
                                 { result?.result_object?.rating && (
                                     <p className="flex items-center">
                                         <ReactStarsRating 
@@ -135,17 +124,15 @@ const SearchResultCard = ({ result }) => {
                                         { result?.result_object?.num_reviews?.toLocaleString() } reviews
                                     </p>
                                 ) }
-                                {/* --- */}
-
-                                {/* Result Object Address or Location */}
+                                {}
+                                {}
                                 <p>
                                     { result?.result_object?.address || result?.result_object?.location_string  }
                                 </p>
-                                {/* --- */}
+                                {}
                             </div>
                         </div>
-                
-                        {/* Review Snippet Displayed If Available */}
+                        {}
                         { (result?.review_snippet && result?.review_snippet?.snippet) && (
                             <div className="w-full self-end text-xs mmd:text-sm text-dark mt-5 mmd:mt-0 space-y-1">
                                 <p className="flex items-center">
@@ -159,13 +146,11 @@ const SearchResultCard = ({ result }) => {
                                 </p>
                             </div>
                         ) }
-                        {/* / Review Snippet Displayed If Available */}
+                        {}
                     </div>
                 </div>
             ) }
         </>
-        
      );
 }
- 
 export default SearchResultCard;

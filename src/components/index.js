@@ -1,4 +1,3 @@
-//cards
 export { default as Navbar } from './Navbar';
 export { default as WhereTo } from './WhereTo';
 export { default as ToStay } from './ToStay';

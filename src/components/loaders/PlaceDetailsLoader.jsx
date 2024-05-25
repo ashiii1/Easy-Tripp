@@ -1,4 +1,3 @@
-//placeDetails
 const PlaceDetailsLoader = () => {
     return (
         <div className="container mx-auto p-4 space-y-3 animate-pulse duration-75">

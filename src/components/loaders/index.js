@@ -1,4 +1,3 @@
-//index for loaders
 export { default as Loader } from './Loader';
 export { default as PlaceCardLoader } from './PlaceCardLoader';
 export { default as PlaceDetailsLoader } from './PlaceDetailsLoader';

@@ -1,4 +1,3 @@
-//placelist
 const PlaceListLoader = () => {
     return ( 
         <div className="container">
