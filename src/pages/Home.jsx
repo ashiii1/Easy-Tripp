@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Navbar, WhereTo, ToVisit, ToEat, ToStay, Footer } from '../components';
-import travelerChoiceBg from "../img/tc_cards_desktop.jpeg";
-import travelerChoiceBgSM from "../img/tc_cards_tablet.jpeg";
+
 
 const Home = () => {
     // Home pag Trending in Travel toggle state 
@@ -34,8 +33,10 @@ const Home = () => {
                     {/* --- */}
 
                     {/* Section Background Image - Displays only on Small Devices, Mobile */}
-                    <div className="block mmd:hidden h-full bg-contain bg-top" style={{backgroundImage: `url(${travelerChoiceBgSM})`, backgroundRepeat: 'no-repeat'}} />
+                    <div className="block mmd:hidden h-full bg-contain bg-top" />
                     {/* --- */}
+                    {/* <div className="block mmd:hidden h-full bg-contain bg-top" style={{backgroundImage: `url(${travelerChoiceBgSM})`, backgroundRepeat: 'no-repeat'}} /> */}
+
                 </div>
             </div>
             {/* --- */}
