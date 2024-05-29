@@ -104,9 +104,8 @@ const Map = ({ places, coordinates, setCoordinates, setBounds }) => {
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
-        width: '50%',
-        height: '100vh',
-        position: 'relative',
+       
+        
     };
 
     return (
