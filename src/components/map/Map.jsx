@@ -104,7 +104,7 @@ const Map = ({ places, coordinates, setCoordinates, setBounds }) => {
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
-       
+       zIndex: -1
         
     };
 
