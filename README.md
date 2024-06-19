@@ -4,26 +4,27 @@ EasyExplore
 
 EasyExplore is a user-friendly travel planning application designed to help users discover nearby attractions, hotels, restaurants, and more based on their trip location. The application provides a seamless experience for planning and exploring travel destinations.
 
-![Al]()
+![Al](https://github.com/ashiii1/Easy-Tripp/blob/main/src/Ss-expl/Screenshot%20(7).png)
 
 Features
 Trip Planning: Enter your trip location and discover nearby attractions, hotels, restaurants, and other points of interest.
 
 Attraction Discovery: Explore nearby attractions and points of interest with detailed information, ratings, and user reviews.
 
-![Al]()
+![Al](https://github.com/ashiii1/Easy-Tripp/blob/main/src/Ss-expl/Screenshot%20(7).png)
 
 Hotel Booking: Find hotels with vacant rooms near your trip location and view detailed information about each hotel.
 
-![Al]()
+![Al](https://github.com/ashiii1/Easy-Tripp/blob/main/src/Ss-expl/Screenshot%20(18).png)
 
 Restaurant Recommendations: Discover restaurants with user reviews and ratings to plan your dining experiences during your trip.
 
-![Al]()
+![Al](https://github.com/ashiii1/Easy-Tripp/blob/main/src/Ss-expl/Screenshot%20(13).png)
 
 Interactive Map: EasyExplore features an interactive map that displays your trip location and nearby points of interest visually.
 
-![Al]()
+![Al](https://github.com/ashiii1/Easy-Tripp/blob/main/src/Ss-expl/Screenshot%20(17).png)
+
 
 
 Technologies Used
