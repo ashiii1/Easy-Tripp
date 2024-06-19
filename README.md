@@ -11,7 +11,7 @@ Trip Planning: Enter your trip location and discover nearby attractions, hotels,
 
 Attraction Discovery: Explore nearby attractions and points of interest with detailed information, ratings, and user reviews.
 
-![Al](https://github.com/ashiii1/Easy-Tripp/blob/main/src/Ss-expl/Screenshot%20(7).png)
+![Al](https://github.com/ashiii1/Easy-Tripp/blob/main/src/Ss-expl/Screenshot%20(11).png)
 
 Hotel Booking: Find hotels with vacant rooms near your trip location and view detailed information about each hotel.
 
