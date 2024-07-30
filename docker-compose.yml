@@ -1,0 +1,9 @@
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+      - "80:80"
+    environment:
+      - VITE_TRAVEL_API_KEY=c435f8a526msh54b6c034819ddd3p1d5b31jsn97aaf2c26bd1
+      
